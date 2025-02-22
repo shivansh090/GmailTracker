@@ -1,7 +1,7 @@
 {
   "version": 2,
   "builds": [
-    { "src": "emailtracker.py", "use": "@vercel/python" }
+    { "src": "gmailtracker.py", "use": "@vercel/python" }
   ],
   "routes": [
     {
