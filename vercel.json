@@ -1,20 +1,11 @@
 {
   "version": 2,
   "builds": [
-    { "src": "gmailtracker.py", "use": "@vercel/python" }
+    { "src": "api/gmailtracker.py", "use": "@vercel/python" }
   ],
   "routes": [
-    {
-      "src": "/",
-      "dest": "emailtracker.py"
-    },
-    {
-      "src": "/pixel.png",
-      "dest": "emailtracker.py"
-    },
-    {
-      "src": "/send-email/(.*)",
-      "dest": "emailtracker.py"
-    }
+    { "src": "/", "dest": "api/gamiltracker.py" },
+    { "src": "/pixel.png", "dest": "api/gamiltracker.py" },
+    { "src": "/send-email/(.*)", "dest": "api/gamiltracker.py" }
   ]
 }
